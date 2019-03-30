@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+let name = prompt("hello");
+console.log(name)
+$(document).ready(function(){
+let temp=$("#user__name")[0].childNodes[0]
+temp.data=temp.data+" "+name
+console.log(temp)
+})
